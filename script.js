@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function fetchWeatherData(cityName) {
       const apiKey = "13d52f84b2513edfbaddc7217b4909c4";
-      const apiCoordinates = `http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
+      const apiCoordinates = `https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&limit=1&appid=${apiKey}`;
 
       return fetch(apiCoordinates)
           .then(response => {
