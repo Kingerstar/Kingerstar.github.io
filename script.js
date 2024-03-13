@@ -5,9 +5,14 @@ document.addEventListener('DOMContentLoaded', function () {
   const headerHover = document.querySelector('.before-api');
   const defaultCity = "Bordeaux"; // Change defaultCity with your city's name !
 
-  handleSearch(); 
+  setInterval(handleSearch(), 3600000);
 
   searchButton.addEventListener('click', handleSearch);
+  cityInput.addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        handleSearch();
+    }
+});
 
   function handleSearch() {
       
