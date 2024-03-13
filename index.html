@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chill Weather</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
+
+</head>
+<body>
+  <div id="img">
+    <header class="before-api">
+        <h1>Chill Weather</h1>
+        <p>Breathe Deep, Feel the Chill</p>
+        <audio id="weather-audio" controls autoplay src="assets/songs/menu.mp3" ></audio>
+    </header>
+    <main>
+      <div class="search">
+      <input type="text" id="city-input" placeholder="Name a city...">     
+      <h2 id="city-name"></h2>
+       <div><span id="country"></span> <span id="flag-container"></span>
+      <button id="search-bar">Search</button>
+      </div>
+    <div class="weather-card">
+            <div class="temperature">
+                <h3 id="temperature"></h3>
+                <p id="temp-min"></p>
+                <p id="temp-max"></p>
+                <p id="wind-speed"></p>
+              </div>
+              <div class="humidity">
+                <p id="humidity"></p>
+                <div class="description">
+                  <span id="descr"></span>
+                  <img id="svg">
+                </div>
+         </div>
+      </div>
+    </main>
+</div>
+    <script src="script.js"></script> 
+</body>
+</html>
