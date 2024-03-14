@@ -12,13 +12,15 @@ Chill Weather is a simple web application that provides a relaxing experience by
 
 To use Chill Weather, simply open the application in your web browser, enter the name of the city you're interested in, and enjoy the relaxing ambiance while staying updated about the weather.
 
+## Important Note
+
+To change the default city, modify the `defaultCity` variable in the `script.js` file with the desired city name.
+
 ## Acknowledgements
 
 - Background music provided by Pixabay
 - Icons sourced from [cdnjs](https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css)
 - Weather data fetched from the OpenWeatherMap API
 - Images retrieved from the Unsplash API
+- Favicon from : [eucalyp](https://creativemarket.com/eucalyp)
 
-## Important Note
-
-To change the default city, modify the `defaultCity` variable in the `script.js` file with the desired city name.
