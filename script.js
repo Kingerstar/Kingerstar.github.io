@@ -82,8 +82,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const weatherSvg = document.getElementById("svg");
     const audioSource = selectAudioAndSvg(weather);
     const svgSource = selectAudioAndSvg(weather, weatherSvg);
-    
-    audioElement.removeAttribute('controls');
     audioElement.src = audioSource;
     weatherSvg.src = svgSource;
 }
